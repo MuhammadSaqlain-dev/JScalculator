@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+
+body {
+  width: 500px;
+  margin: 4% auto;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 5px;
+  user-select: none;
+}
+
+.calculator {
+  padding: 20px;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 1px;
+}
+
+#input {
+  height: 60px;
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  margin-right: 6px;
+  text-align: right;
+  padding-top: 10px;
+  padding-right: 15px;
+  font-size: 2.5rem;
+  user-select: none;
+  overflow-x: auto;
+  transition: all 0.2s ease-in-out;
+}
+
+#input:hover {
+  border: 1px solid #bbb;
+  box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.operators div {
+  display: inline-block;
+  border: 1px solid #bbb;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px;
+  width: 80px;
+  text-align: center;
+  margin: 20px 4px 10px 0;
+  background-color: #ddd;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.operators div:hover {
+  border-radius: #aaa;
+  background-color: #ddd;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+#left-panel {
+  display: inline-block;
+}
+
+.numbers div {
+  display: inline-block;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  padding: 10px;
+  width: 80px;
+  text-align: center;
+  margin: 10px 4px 10px 0;
+  font-size: 1.8rem;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s,
+    background-color 0.2s;
+}
+
+.numbers div:hover {
+  border-color: #bbb;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  background-color: #f1f1f1;
+}
+
+.equal {
+  display: inline-block;
+  background-color: #4d90fe;
+  color: white;
+  padding: 127px 10px;
+  border: 1px solid #3079ed;
+  border-radius: 1px;
+  vertical-align: top;
+  width: 17%;
+  text-align: center;
+  margin: 10px 6px 10px 0;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.equal:hover {
+  background-color: #307cf9;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #1857bb;
+}
+
+.equal:active {
+  font-weight: bolder;
+}
